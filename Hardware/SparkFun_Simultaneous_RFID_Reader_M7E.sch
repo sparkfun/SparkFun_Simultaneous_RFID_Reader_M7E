@@ -18921,13 +18921,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="V_USB" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="3.3V">
-<description>&lt;h3&gt;3.3V Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
-</symbol>
 <symbol name="VIN">
 <description>&lt;h3&gt;Input Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -18941,6 +18934,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="VOUT">
+<description>&lt;h3&gt;Vout Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0" y="2.794" size="1.778" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
+<pin name="VOUT" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -18971,20 +18971,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="3.3V" prefix="SUPPLY">
-<description>&lt;h3&gt;3.3V Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Power supply symbol for a specifically-stated 3.3V source.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="3.3V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="VIN" prefix="SUPPLY">
 <description>&lt;h3&gt;Input Voltage Supply&lt;/h3&gt;
 &lt;p&gt;Generic voltage input supply symbol.&lt;/p&gt;</description>
@@ -19004,6 +18990,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Positive voltage supply (traditionally for a BJT device, C=collector).&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VOUT" prefix="SUPPLY">
+<description>&lt;h3&gt;VOUT Voltage Output&lt;/h3&gt;
+&lt;p&gt;Output voltage &lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="VOUT" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -24289,7 +24289,6 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
-<part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SHLD" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R1" library="SparkFun-Resistors" deviceset="5.1KOHM" device="5.1KOHM-0603-1/10W-1%" value="5.1k"/>
@@ -24299,7 +24298,6 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="D1" library="SparkFun-IC-Power" deviceset="PRTR5V0U2" device="F"/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
-<part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="S1" library="SparkFun-Switches" deviceset="SWITCH-DPDT" device="-SMD-AYZ0202"/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".2_INCH"/>
@@ -24307,7 +24305,6 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="PWR" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="10NF" device="-0603-50V-10%" value="10nF"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
@@ -24318,7 +24315,6 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="GND14" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY13" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="J5" library="SparkFun-Connectors" deviceset="U.FL" device="" value="U.FL"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="1.0pF"/>
@@ -24331,7 +24327,6 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="R5" library="SparkFun-Resistors" deviceset="0OHM" device="-0603-1/10W" value="DNP"/>
 <part name="D3" library="SparkFun-IC-Power" deviceset="PRTR5V0U2" device="F"/>
 <part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_08" device="NO_SILK_DNP"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_NO_POP"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="1.0pF"/>
@@ -24343,6 +24338,11 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
 <part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY16" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
+<part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="VOUT" device=""/>
+<part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="VOUT" device=""/>
+<part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="VOUT" device=""/>
+<part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VOUT" device=""/>
+<part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="VOUT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24457,9 +24457,6 @@ USB and serial header inputs</text>
 <instance part="SUPPLY1" gate="G$1" x="30.48" y="167.64" smashed="yes">
 <attribute name="VALUE" x="30.48" y="170.434" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY2" gate="G$1" x="114.3" y="167.64" smashed="yes">
-<attribute name="VALUE" x="114.3" y="170.434" size="1.778" layer="96" align="bottom-center"/>
-</instance>
 <instance part="SHLD" gate="G$1" x="38.1" y="144.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="35.052" y="144.78" size="1.778" layer="95" font="vector" rot="R90" align="center"/>
 </instance>
@@ -24490,9 +24487,6 @@ USB and serial header inputs</text>
 <instance part="SUPPLY3" gate="G$1" x="88.9" y="165.1" smashed="yes">
 <attribute name="VALUE" x="88.9" y="167.894" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="17.78" y="96.52" smashed="yes">
-<attribute name="VALUE" x="17.78" y="99.314" size="1.778" layer="96" align="bottom-center"/>
-</instance>
 <instance part="SUPPLY5" gate="G$1" x="10.16" y="96.52" smashed="yes">
 <attribute name="VALUE" x="10.16" y="99.314" size="1.778" layer="96" align="bottom-center"/>
 </instance>
@@ -24514,9 +24508,6 @@ USB and serial header inputs</text>
 </instance>
 <instance part="GND10" gate="1" x="231.14" y="71.12" smashed="yes">
 <attribute name="VALUE" x="231.14" y="70.866" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="SUPPLY8" gate="G$1" x="231.14" y="111.76" smashed="yes">
-<attribute name="VALUE" x="231.14" y="114.554" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="C2" gate="G$1" x="20.32" y="30.48" smashed="yes">
 <attribute name="NAME" x="21.844" y="33.401" size="1.778" layer="95" font="vector"/>
@@ -24550,9 +24541,6 @@ USB and serial header inputs</text>
 </instance>
 <instance part="GND15" gate="1" x="226.06" y="142.24" smashed="yes">
 <attribute name="VALUE" x="226.06" y="141.986" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="SUPPLY12" gate="G$1" x="193.04" y="167.64" smashed="yes">
-<attribute name="VALUE" x="193.04" y="170.434" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY13" gate="G$1" x="200.66" y="167.64" smashed="yes">
 <attribute name="VALUE" x="200.66" y="170.434" size="1.778" layer="96" align="bottom-center"/>
@@ -24596,9 +24584,6 @@ USB and serial header inputs</text>
 <instance part="GND19" gate="1" x="91.44" y="86.36" smashed="yes">
 <attribute name="VALUE" x="91.44" y="86.106" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY10" gate="G$1" x="66.04" y="104.14" smashed="yes">
-<attribute name="VALUE" x="66.04" y="106.934" size="1.778" layer="96" align="bottom-center"/>
-</instance>
 <instance part="J1" gate="G$1" x="185.42" y="152.4" smashed="yes">
 <attribute name="VALUE" x="180.34" y="139.954" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="180.34" y="165.608" size="1.778" layer="95" font="vector"/>
@@ -24635,6 +24620,21 @@ USB and serial header inputs</text>
 </instance>
 <instance part="SUPPLY16" gate="G$1" x="226.06" y="162.56" smashed="yes">
 <attribute name="VALUE" x="226.06" y="165.354" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY14" gate="G$1" x="17.78" y="96.52" smashed="yes">
+<attribute name="VALUE" x="17.78" y="99.314" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY4" gate="G$1" x="193.04" y="167.64" smashed="yes">
+<attribute name="VALUE" x="193.04" y="170.434" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY12" gate="G$1" x="114.3" y="167.64" smashed="yes">
+<attribute name="VALUE" x="114.3" y="170.434" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY2" gate="G$1" x="66.04" y="104.14" smashed="yes">
+<attribute name="VALUE" x="66.04" y="106.934" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY10" gate="G$1" x="231.14" y="111.76" smashed="yes">
+<attribute name="VALUE" x="231.14" y="114.554" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -24944,40 +24944,6 @@ USB and serial header inputs</text>
 <wire x1="45.72" y1="25.4" x2="48.26" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="3.3V" class="0">
-<segment>
-<pinref part="U2" gate="U1" pin="VCC"/>
-<wire x1="134.62" y1="165.1" x2="114.3" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
-<wire x1="114.3" y1="165.1" x2="114.3" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="154.94" x2="114.3" y2="165.1" width="0.1524" layer="91"/>
-<junction x="114.3" y="165.1"/>
-</segment>
-<segment>
-<pinref part="U1" gate="U1" pin="VOUT"/>
-<wire x1="20.32" y1="93.98" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="93.98" x2="17.78" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<wire x1="190.5" y1="162.56" x2="193.04" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="162.56" x2="193.04" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="SUPPLY12" gate="G$1" pin="3.3V"/>
-<pinref part="J1" gate="G$1" pin="8"/>
-</segment>
-<segment>
-<pinref part="D3" gate="D1" pin="5"/>
-<wire x1="68.58" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="96.52" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
-<wire x1="231.14" y1="109.22" x2="231.14" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SHLD" class="0">
 <segment>
 <pinref part="J3" gate="J1" pin="SHLD"/>
@@ -25151,6 +25117,40 @@ USB and serial header inputs</text>
 <wire x1="226.06" y1="152.4" x2="228.6" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="J2" gate="J1" pin="3"/>
 <pinref part="SUPPLY16" gate="G$1" pin="VCC"/>
+</segment>
+</net>
+<net name="VOUT" class="0">
+<segment>
+<pinref part="U1" gate="U1" pin="VOUT"/>
+<wire x1="20.32" y1="93.98" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="93.98" x2="17.78" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="SUPPLY14" gate="G$1" pin="VOUT"/>
+</segment>
+<segment>
+<wire x1="190.5" y1="162.56" x2="193.04" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="162.56" x2="193.04" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="8"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VOUT"/>
+</segment>
+<segment>
+<pinref part="U2" gate="U1" pin="VCC"/>
+<wire x1="134.62" y1="165.1" x2="114.3" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="165.1" x2="114.3" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="154.94" x2="114.3" y2="165.1" width="0.1524" layer="91"/>
+<junction x="114.3" y="165.1"/>
+<pinref part="SUPPLY12" gate="G$1" pin="VOUT"/>
+</segment>
+<segment>
+<pinref part="D3" gate="D1" pin="5"/>
+<wire x1="68.58" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="96.52" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="SUPPLY2" gate="G$1" pin="VOUT"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="109.22" x2="231.14" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="G$1" pin="VOUT"/>
 </segment>
 </net>
 </nets>
