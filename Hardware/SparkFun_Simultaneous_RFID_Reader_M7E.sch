@@ -18829,7 +18829,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="U1" pin="VOUT" pad="10"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-21210"/>
+</technology>
 </technologies>
 </device>
 </devices>

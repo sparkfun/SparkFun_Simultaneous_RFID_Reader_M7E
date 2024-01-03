@@ -9847,6 +9847,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 </element>
 <element name="U1" library="SparkFun-RF" package="M7E_HECTO_MODULE" value="UHF_RFID_NANO_MODULE_M7E_HECTO" x="17.78" y="25.4" smashed="yes">
 <attribute name="NAME" x="8.78" y="14.4" size="0.762" layer="25" ratio="10"/>
+<attribute name="PROD_ID" value="IC-21210" x="17.78" y="25.4" size="1.778" layer="27" display="off"/>
 </element>
 <element name="E1" library="SparkFun-RF" package="TRACE_ANTENNA_915MHZ_THINGMAGIC" value="ANTENNA-GROUNDEDTRACE-915MHZ" x="30.48" y="43.18" smashed="yes" rot="R180"/>
 <element name="C1" library="SparkFun-Capacitors" package="0603" value="1.0pF" x="29.591" y="45.847" smashed="yes" rot="R180">
