@@ -23458,121 +23458,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="1KOHM" prefix="R">
-<description>&lt;h3&gt;1kΩ resistor&lt;/h3&gt;
+<deviceset name="4.7KOHM" prefix="R">
+<description>&lt;h3&gt;4.7kΩ resistor&lt;/h3&gt;
 &lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-HORIZ-1/4W-1%" package="AXIAL-0.3">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12182"/>
-<attribute name="VALUE" value="1k"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT-1/4W-1%" package="AXIAL-0.1">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12182"/>
-<attribute name="VALUE" value="1k"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT_KIT-1/4W-1%" package="AXIAL-0.1-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12182"/>
-<attribute name="VALUE" value="1k"/>
-</technology>
-</technologies>
-</device>
-<device name="-HORIZ_KIT-1/4W-1%" package="AXIAL-0.3-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12182"/>
-<attribute name="VALUE" value="1k"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT-1/4W-5%" package="AXIAL-0.1">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-08380"/>
-<attribute name="VALUE" value="1k"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT_KIT-1/4W-5%" package="AXIAL-0.1-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-08380"/>
-<attribute name="VALUE" value="1k"/>
-</technology>
-</technologies>
-</device>
-<device name="-HORIZ-1/4W-5%" package="AXIAL-0.3">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-08380"/>
-<attribute name="VALUE" value="1k"/>
-</technology>
-</technologies>
-</device>
-<device name="-HORIZ_KIT-1/4W-5%" package="AXIAL-0.3-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-08380"/>
-<attribute name="VALUE" value="1k"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT-1/6W-5%" package="AXIAL-0.1">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-09769"/>
-<attribute name="VALUE" value="1k"/>
-</technology>
-</technologies>
-</device>
 <device name="-0603-1/10W-1%" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -23580,19 +23472,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-07856"/>
-<attribute name="VALUE" value="1k"/>
-</technology>
-</technologies>
-</device>
-<device name="-0402-1/16W-1%" package="0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-14342" constant="no"/>
+<attribute name="PROD_ID" value="RES-07857"/>
+<attribute name="VALUE" value="4.7k"/>
 </technology>
 </technologies>
 </device>
@@ -23603,8 +23484,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-14342" constant="no"/>
-<attribute name="VALUE" value="1k" constant="no"/>
+<attribute name="PROD_ID" value="RES-15343" constant="no"/>
+<attribute name="VALUE" value="4.7k" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -24504,9 +24385,9 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="S1" library="SparkFun-Switches" deviceset="SWITCH-DPDT" device="-SMD-AYZ0202"/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".2_INCH"/>
-<part name="D2" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="Red"/>
+<part name="D2" library="SparkFun-LED" deviceset="LED-RED" device="_0603-KB" value="Red"/>
 <part name="PWR" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="4.7KOHM" device="-0603-1/10W-1%" value="4.7k"/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="10NF" device="-0603-50V-10%" value="10nF"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
