@@ -24593,8 +24593,10 @@ disconnect USB shield</text>
 <text x="88.9" y="43.18" size="1.27" layer="97" font="vector" align="center">Move 0 Ohm resistor to
 switch between internal
 and external antennas</text>
-<text x="12.7" y="106.68" size="1.27" layer="97" font="vector" align="center">VIN Range:
-3.3V - 5.5V</text>
+<text x="12.7" y="109.22" size="1.27" layer="97" font="vector" align="center">VOUT Range:
+Variable, nominally 3.3V
+while active. Typically 
+2.5V while idle.</text>
 <text x="218.44" y="111.76" size="1.27" layer="97" font="vector" align="center">Cut PWR trace to
 remove power LED</text>
 <wire x1="147.32" y1="76.2" x2="147.32" y2="127" width="0.2032" layer="97" style="longdash"/>
@@ -24602,6 +24604,8 @@ remove power LED</text>
 <wire x1="76.2" y1="76.2" x2="147.32" y2="76.2" width="0.2032" layer="97" style="longdash"/>
 <text x="180.34" y="78.74" size="1.27" layer="97" font="vector" align="center">Use to switch between
 USB and serial header inputs</text>
+<text x="12.7" y="116.84" size="1.27" layer="97" font="vector" align="center">VIN Range:
+3.3V - 5.5V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>

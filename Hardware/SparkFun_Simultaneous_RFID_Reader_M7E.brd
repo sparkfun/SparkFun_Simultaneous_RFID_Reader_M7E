@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
@@ -9942,10 +9942,10 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="2.413" y="31.115" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="0.127" y="31.115" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90" align="top-center"/>
 </element>
-<element name="R3" library="SparkFun-Resistors" package="0603" value="1k" x="2.54" y="29.845" smashed="yes" rot="R180">
-<attribute name="NAME" x="2.54" y="29.083" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-07856" x="2.54" y="29.845" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="VALUE" x="2.54" y="30.607" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
+<element name="R3" library="SparkFun-Resistors" package="0603" value="1k" x="2.54" y="30.099" smashed="yes" rot="R180">
+<attribute name="NAME" x="2.54" y="29.337" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-07856" x="2.54" y="30.099" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<attribute name="VALUE" x="2.54" y="30.861" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
 <element name="U$49" library="output" package="#PWR#0" value="" x="1.905" y="31.115" smashed="yes" rot="MR0"/>
 <element name="U$50" library="output" package="#SHLD#0" value="" x="13.843" y="3.175" smashed="yes" rot="MR0"/>
@@ -10474,6 +10474,12 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="17.145" y1="9.779" x2="17.145" y2="10.795" width="0.4572" layer="1"/>
 <wire x1="17.145" y1="10.795" x2="16.764" y2="11.176" width="0.4572" layer="1"/>
 <wire x1="16.764" y1="11.176" x2="14.5542" y2="11.176" width="0.4572" layer="1"/>
+<polygon width="0.18541875" layer="1" isolate="0.127" thermals="no">
+<vertex x="17.2974" y="9.4234"/>
+<vertex x="17.2974" y="9.906"/>
+<vertex x="17.018" y="9.906"/>
+<vertex x="17.018" y="9.7028"/>
+</polygon>
 </signal>
 <signal name="USB_N" class="1">
 <contactref element="U2" pad="6"/>
@@ -10487,6 +10493,12 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="18.415" y1="9.779" x2="18.415" y2="10.4394" width="0.4572" layer="1"/>
 <wire x1="18.415" y1="10.4394" x2="17.08658125" y2="11.76781875" width="0.4572" layer="1"/>
 <wire x1="17.08658125" y1="11.76781875" x2="14.29778125" y2="11.76781875" width="0.4572" layer="1"/>
+<polygon width="0.18541875" layer="1" isolate="0.127" thermals="no">
+<vertex x="18.2626" y="9.4234"/>
+<vertex x="18.2626" y="9.906"/>
+<vertex x="18.542" y="9.906"/>
+<vertex x="18.542" y="9.7028"/>
+</polygon>
 </signal>
 <signal name="V_USB">
 <contactref element="J3" pad="VBUS1"/>
@@ -10700,8 +10712,8 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <signal name="N$2">
 <contactref element="R3" pad="1"/>
 <contactref element="D2" pad="A"/>
-<wire x1="3.39" y1="29.845" x2="3.417" y2="29.872" width="0.254" layer="1"/>
-<wire x1="3.417" y1="29.872" x2="3.417" y2="31.75" width="0.254" layer="1"/>
+<wire x1="3.39" y1="30.099" x2="3.417" y2="30.126" width="0.254" layer="1"/>
+<wire x1="3.417" y1="30.126" x2="3.417" y2="31.75" width="0.254" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="D2" pad="C"/>
@@ -10744,7 +10756,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="29.21" y="10.16" extent="1-16" drill="0.3048"/>
 <wire x1="29.21" y1="10.16" x2="28.575" y2="10.795" width="0.254" layer="16"/>
 <contactref element="R3" pad="2"/>
-<wire x1="1.69" y1="28.36" x2="1.69" y2="29.845" width="0.254" layer="1"/>
+<wire x1="1.69" y1="28.36" x2="1.69" y2="30.099" width="0.254" layer="1"/>
 <wire x1="1.27" y1="27.94" x2="1.69" y2="28.36" width="0.254" layer="1"/>
 </signal>
 <signal name="N$14">
