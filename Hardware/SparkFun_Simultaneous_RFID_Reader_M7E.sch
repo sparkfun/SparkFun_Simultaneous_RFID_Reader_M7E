@@ -24433,7 +24433,9 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="E1" library="SparkFun-RF" deviceset="ANTENNA-GROUNDED" device="TRACE-915MHZ"/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="1.0pF"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="DNP">
+<attribute name="PROD_ID" value=""/>
+</part>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="L1" library="SparkFun-Coils" deviceset="3.9NH" device=""/>
 <part name="H1" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
@@ -24479,20 +24481,28 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="J5" library="SparkFun-Connectors" deviceset="U.FL" device="" value="U.FL"/>
-<part name="C5" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="1.0pF"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="DNP">
+<attribute name="PROD_ID" value=""/>
+</part>
 <part name="C6" library="SparkFun-Capacitors" deviceset="1.0NF/1000PF" device="-0603-50V-10%" value="1nF"/>
 <part name="GND16" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND17" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="10NF" device="-0603-50V-10%" value="10nF"/>
 <part name="GND18" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R4" library="SparkFun-Resistors" deviceset="0OHM" device="-0603-1/10W" value="0"/>
-<part name="R5" library="SparkFun-Resistors" deviceset="0OHM" device="-0603-1/10W" value="DNP"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="0OHM" device="-0603-1/10W" value="DNP">
+<attribute name="PROD_ID" value=""/>
+</part>
 <part name="D3" library="SparkFun-IC-Power" deviceset="PRTR5V0U2" device="F"/>
 <part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_08" device="NO_SILK_DNP"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_NO_POP"/>
-<part name="C8" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="1.0pF"/>
-<part name="C9" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="1.0pF"/>
+<part name="C8" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="DNP">
+<attribute name="PROD_ID" value=""/>
+</part>
+<part name="C9" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="DNP">
+<attribute name="PROD_ID" value=""/>
+</part>
 <part name="GND20" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="VIN_SEL" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_2-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39289/1"/>
