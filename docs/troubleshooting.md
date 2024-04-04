@@ -11,7 +11,7 @@ You can also use the module's ability to change read duty cycle to reduce the he
 
 ### Logic Levels
 
-Reminder, the Simultaneous RFID Reader 3.3V operates at <b>3.3V</b> logic. Make sure any devices (development board or serial converter) connected to the serial interface operate at <b>3.3V</b> logic or are properly [shifted](https://learn.sparkfun.com/tutorials/logic-levels) to avoid damaging the M7E Nano.
+Reminder, the Simultaneous RFID Reader M7E 3.3V operates at <b>3.3V</b> logic. Make sure any devices (development board or serial converter) connected to the serial interface operate at <b>3.3V</b> logic or are properly [shifted](https://learn.sparkfun.com/tutorials/logic-levels) to avoid damaging the M7E Nano.
 
 ### General Troubleshooting and Technical Assistance
 
