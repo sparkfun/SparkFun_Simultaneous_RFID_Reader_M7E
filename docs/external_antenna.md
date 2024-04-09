@@ -33,15 +33,21 @@ If you have never worked with solder jumpers before or would like some tips or a
 
 Carefully reflow the 0k&ohm; RF resistor to move it to the u.FL position. You can either use a [soldering iron]() or [hot air rework station]() to reflow the solder holding the resistor into place.
 
-**Photo of resistor adjusted to the u.FL position**
+<figure markdown>
+[![Photo showing 0k ohm resistor adjusted to external antenna position.](./assets/img/Simultaneous_RFID_Reader_M7E-Antenna_Selection.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-Antenna_Selection.jpg "Click to enlarge")
+</figure>
 
 Next, attach the u.FL to the [RP-SMA connector cable](https://www.sparkfun.com/products/662). Because this connector is fragile we recommend either taping or hot gluing the sheath of the cable to the PCB. This will help prevent damage to the u.FL connector in case the cable gets pulled on.
 
-**Photo of u.FL cable secured with electrical tape**
+<figure markdown>
+[![Photo showing u.Fl cable secured with electrical tape.](./assets/img/Simultaneous_RFID_Reader_M7E-UFL.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-UFL.jpg "Click to enlarge")
+</figure>
 
 To get the best range we recommend attaching an external high-gain antenna to a tri-pod of some sort. If you only have a desk, that's ok too.
 
-**Photo of RFID Antenna attached to tripod**
+<figure markdown>
+[![Photo showing external antenna mounted.](./assets/img/Simultaneous_RFID_Reader_M7E-Antenna_Mounted.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-Antenna_Mounted.jpg "Click to enlarge")
+</figure>
 
 We used the included hardware with the antenna to attach it to a leg of the tripod. 
 
@@ -49,7 +55,9 @@ We used the included hardware with the antenna to attach it to a leg of the trip
 
 Now connect the RP-SMA to RP-TNC cable. And finally connect the RP-TNC to the external antenna. You can use a different UHF RFID antenna but you will need to have the correct connectors and cables to go from the u.FL connector on the board to the connector on your specific antenna.
 
-**Photo of u.FL connector to RP-SMA to RP-TNC**
+<figure markdown>
+[![Photo showing completed external antenna assembly](./assets/img/Simultaneous_RFID_Reader_M7E-Full_External_Antenna.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-Full_External_Antenna.jpg "Click to enlarge")
+</figure>
 
 -> *u.FL connector to RP-SMA to RP-TNC* <-
 

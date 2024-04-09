@@ -2,19 +2,23 @@ In this section we'll take a closer look at the hardware present on the Simultan
 
 ### M7E Nano
 
-The M7E Nano is a Ultra-High Frequency (UHF) RFID reader capable of reading multiple tags simultaneously at up to 150 tags per second.
+The M7E Nano is an Ultra-High Frequency (UHF) RFID reader capable of reading multiple tags simultaneously at up to 150 tags per second. 
 
-
+<figure markdown>
+[![Photo highlighting the M7E Hecto](./assets/img/Simultaneous-RFID_Reader_M7E-Module.jpg){ width="600"}](./assets/img/Simultaneous-RFID_Reader_M7E-Module.jpg "Click to enlarge")
+</figure>
 
 The module can also write data quickly to RFID tags with 96-bit EPC (80msec typical write time). The M7E Nano boasts adjustable read and write RF power levels from 0dBm to 27dBm in 0.01dBm steps and can read tags from several feet away (up to 16 feet in our testing!) with the proper antenna, conditions and device settings.
 
-The M7E-NANO works with common, low-cost, passive, Gen2 UHF tags available from a variety of online vendors in a variety of shapes and sizes. We offer two types of UHF tags, ones [with adhesive](https://www.sparkfun.com/products/20228) backing and [ultra-small](https://www.sparkfun.com/products/16464) ones. Both have 64 bytes of user writable memory.
+The M7E-NANO works with common, low-cost, passive, Gen2 UHF tags available from a variety of online vendors in a variety of shapes and sizes. We offer two types of UHF tags, ones [with adhesive](https://www.sparkfun.com/products/20228) backing and [ultra-small](https://www.sparkfun.com/products/16464) ones. Both have 64 bytes of user-writable memory.
 
 ### Communication Interfaces
 
-The board has two options for interacting with the M7E Nano's serial interface: USB-C and a plated through-hole (PTH) header. The PTH header can connect to a microcontroller or serial converter (running at <b>3.3V</b> logic or properly level shifted). The selection switch on the board labeled <b>UART</b> allows users to choose between the two serial interface options. The board also breaks out several of the M7E Nano's GPIO pins and the Enable pin.
+The board has two options for interacting with the M7E Nano's serial interface: USB-C and a plated through-hole (PTH) header. The PTH header can connect to a microcontroller or serial converter (running at <b>3.3V</b> logic or properly level-shifted). The selection switch on the board labeled <b>UART</b> allows users to choose between the two serial interface options. The board also breaks out several of the M7E Nano's GPIO pins and the Enable pin.
 
-
+<figure markdown>
+[![Photo highlighting USB, PTHs and UART Switch.](./assets/img/Simultaneous-RFID-Reader_M7E-Comms.jpg){ width="600"}](./assets/img/Simultaneous-RFID-Reader_M7E-Comms.jpg "Click to enlarge")
+</figure>
 
 #### USB-C
 
@@ -44,7 +48,9 @@ The M7E uses an internal DC to DC converter to provide itself with power. When t
 
 The lone LED on the board indicates device power status. Users can disable this LED by severing the <b>PWR</b> jumper. The Power LED receives voltage from the <b>VOUT</b> pin on the M7E Nano. Driving the <b>EN</b> pin low disables <b>VOUT</b> and can be used to turn this LED off.
 
-
+<figure markdown>
+[![Photo highlighting Power LED.](./assets/img/Simultaneous_RFID_Reader_M7E-LED.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-LED.jpg "Click to enlarge")
+</figure>
 
 ### Solder Jumpers
 
@@ -88,6 +94,9 @@ The exposed copper pour allows the connection to a heatsink such as a chassis or
 
 The Nano M7E is a powerful transmitter capable of outputting up to 27dBm! That's a lot. The board comes with a PCB trace antenna and a u.FL connector for an external antenna connection.
 
+<figure markdown>
+[![Photo highlighting the PCB antenna.](./assets/img/Simultaneous_RFID_Reader_M7E-Antenna.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-Antenna.jpg)
+</figure>
 
 The trace antenna is enabled by default. Adjust the <b>RF</b> resistor to switch the antenna signal to the u.FL connector to use an external antenna. Refer to the [Using an External Antenna]() section of this guide for more information on this assembly step.
 

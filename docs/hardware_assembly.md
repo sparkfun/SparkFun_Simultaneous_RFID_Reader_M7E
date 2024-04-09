@@ -4,17 +4,21 @@ In this section we'll cover the two ways to set up the Simultaneous RFID Reader 
 
 The fastest and easiest way to start using the board is through the USB-C connector. Simply plug the board into a computer with a USB-C cable and open up the Universal Reader Assistant.
 
+<figure markdown>
+[![Photo showing basic USB assembly.](./assets/img/Simultaneous_RFID_Reader_M7E-USB_Connection.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-USB_Connection.jpg "Click to enlarge")
+</figure>
 
-
-Reminder, most computer USB ports can only supply <b>~500mA @5V</b> which limits the power level settings to roughly 20dBm and lower. If you intend to run the M7E at higher power levels, a dedicated power supply is necessary.
+Reminder, many computer USB ports can only supply <b>~500mA @5V</b> which limits the power level settings to roughly 20dBm and lower. Running the M7E at higher power levels may require a dedicated power supply.
 
 ### Communicating via Serial PTH Header
 
 Users who prefer to communicate with the RFID reader using the Serial PTH header should solder either wires or header pins to connect them to a <b>3.3V</b> microcontroller (you can also use this to connect to a USB UART board like the [Serial Basic](https://www.sparkfun.com/products/15096)). If you are not familiar with through-hole soldering or would like a refresher, take a read through [this tutorial](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering).
 
+<figure markdown>
+[![Photo showing Arduino circuit assembly](./assets/img/Simultaneous_RFID_Reader_M7E-Arduino_Circuit.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-Arduino_Circuit.jpg "Click to enlarge")
+</figure>
 
-
-We'll demonstrate soldering male headers to the board and use jumper wires to connect the RFID Reader to the [SparkFun IoT RedBoard - ESP32](https://www.sparkfun.com/products/19177) for use with the [SparkFun Simultaneous RFID Tag Reader Arduino Library](https://github.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library).
+We'll demonstrate soldering male headers to the board and use jumper wires to connect the RFID Reader to the [SparkFun RedBoard Artemis](https://www.sparkfun.com/products/19177) for use with the [SparkFun Simultaneous RFID Tag Reader Arduino Library](https://github.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library).
 
 
 <table class="table table-striped table-hover table-bordered">
@@ -23,7 +27,7 @@ We'll demonstrate soldering male headers to the board and use jumper wires to co
     </tr>
     <tr>
         <th class="text-center">RFID Reader</th>
-        <th class="text-center">RedBoard IoT</th>
+        <th class="text-center">RedBoard Artemis</th>
     </tr>
     <tr align="center">
         <td>RX</td>
