@@ -1,4 +1,4 @@
-The M7E Nano is a Ultra-High Frequency (UHF) RFID reader capable of reading multiple tags simultaneously at up to 150 tags per second and can also write data to tags. The M7E Nano can read tags from several feet away (up to 16 feet in our testing!) with the proper antenna, conditions and device settings.
+The M7E Nano is a Ultra-High Frequency (UHF) RFID reader capable of reading multiple tags simultaneously at up to 150 tags per second and can also write data to tags. The M7E Nano can read tags from several feet away (up to 16 feet in our testing!) with the proper antenna, conditions and device settings. This board includes 
 
 In this guide we'll cover everything you need to set up this RFID reader and use it with the Universal Reader Assistant application to read and write to UHF tags. We'll also cover how to set this board up in a circuit with a 3.3V microcontroller and point you to where you can get started using the SparkFun Simultaneous RFID Tag Reader Arduino Library.
 
@@ -167,7 +167,7 @@ Users who prefer to use the PTH headers to connect to a serial converter or micr
 </div>
 
 !!! note "Logic Levels"
-    <b>Note:</b> The serial output on the Simultaneous RFID Reader - M7E Nano 3.3V operates at <b>3.3V</b> logic so make sure the microcontroller or serial converter connected to this interface operates at <b>3.3V</b> or are properly level-shifted.
+    <b>Note:</b> The serial output on the Simultaneous RFID Reader - M7E  operates at <b>3.3V</b> logic so make sure the microcontroller or serial converter connected to this interface operates at <b>3.3V</b> or are properly level-shifted.
 
 #### Additional Materials
 

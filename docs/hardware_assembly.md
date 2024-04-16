@@ -1,4 +1,4 @@
-In this section we'll cover the two ways to set up the Simultaneous RFID Reader - M7E Nano 3.3V. 
+In this section we'll cover the two ways to set up the Simultaneous RFID Reader - M7E . 
 
 ### Communicating via USB-C Serial
 
@@ -52,11 +52,11 @@ We'll demonstrate soldering male headers to the board and use jumper wires to co
 </div>
 
 <div class="alert alert-danger">
-    <a name="M7ENano_Note2"></a><a href="https://learn.sparkfun.com/tutorials/simultaneous-rfid-reader---M7E-nano-33v-hookup-guide#M7ENano_Note2"><b>2:</b></a> We strongly recommend opening the <b>VIN</b> jumper on the Simultaneous RFID Reader - M7E Nano 3.3V when connecting the <b>VIN</b> PTH pin to an external power source. When the <b>VIN</b> jumper is closed <b>VIN</b> is netted with <b>V_USB</b> (as well as <b>VCC</b>).
+    <a name="M7ENano_Note2"></a><a href="https://learn.sparkfun.com/tutorials/simultaneous-rfid-reader---M7E-nano-33v-hookup-guide#M7ENano_Note2"><b>2:</b></a> We strongly recommend opening the <b>VIN</b> jumper on the Simultaneous RFID Reader - M7E Nano when connecting the <b>VIN</b> PTH pin to an external power source. When the <b>VIN</b> jumper is closed <b>VIN</b> is netted with <b>V_USB</b> (as well as <b>VCC</b>).
 </div>
 
 #### Power Supply Considerations
 
-When connecting the Simultaneous RFID Reader - M7E Nano 3.3V to a microcontroller, make sure your power supply can source sufficient current for your selected power level as the board can draw up to <b>720mA @5V</b> at max read power level. The M7E's internal voltage regulator includes built-in protection that engages when the current draw reaches <b>1A</b> and will not allow any more supply current to the module. As such, it is strongly recommended to use a <b>5V</b> power supply when setting the read power to above +26 dBm.
+When connecting the Simultaneous RFID Reader - M7E to a microcontroller, make sure your power supply can source sufficient current for your selected power level as the board can draw up to <b>720mA @5V</b> at max read power level. The M7E's internal voltage regulator includes built-in protection that engages when the current draw reaches <b>1A</b> and will not allow any more supply current to the module. As such, it is strongly recommended to use a <b>5V</b> power supply when setting the read power to above +26 dBm.
 
-If you opt to power the RFID Reader from your development board's output voltage we recommend using the <b>5V</b> out (if applicable) and then powering your development board through a dedicated power supply to avoid browning the circuit out as USB ports can only source <b>~500mA@5V</b>. The image below shows the Simultaneous RFID Reader - M7E Nano 3.3V connected to the RedBoard IoT and powered with a dedicated power supply through the barrel jack.
+If you opt to power the RFID Reader from your development board's output voltage we recommend using the <b>5V</b> out (if applicable) and then powering your development board through a dedicated power supply to avoid browning the circuit out as USB ports can only source <b>~500mA@5V</b>. The image below shows the Simultaneous RFID Reader - M7E connected to the RedBoard IoT and powered with a dedicated power supply through the barrel jack.

@@ -12,7 +12,7 @@ Open the installer once downloading finishes and follow the installation wizard 
 
 ## Universal Reader Assistant
 
-Make sure the Simultaneous RFID Reader is plugged in either over USB or the Serial Header to a USB-to-Serial converter and open the Universal Reader Assistant. You should be greeted by the Connection Wizard menu to select the reader type and port:
+Make sure the Simultaneous RFID Reader is plugged in either over USB or through the Serial Header to a USB-to-Serial converter with the UART selection switch in the correct position, and open the Universal Reader Assistant. You should be greeted by the Connection Wizard menu to select the reader type and port:
 
 <figure markdown>
 [![Photo of URA Connection Wizard.](./assets/img/URA-Port_Selection.jpg){ width="600}](./assets/img/URA-Port_Selection.jpg "Click to enlarge")
@@ -30,7 +30,7 @@ Expand the *Connect* menu and select `Serial Reader` and drop down the menu to s
 
 
 
-Next, select your `Region`. Since we are in North America, we've selected **NA2**.
+Next, select your `Region`. Since we are in North America, we've selected **NA**.
 
 
 
