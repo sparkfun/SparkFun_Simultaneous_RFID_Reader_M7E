@@ -1,3 +1,7 @@
+---
+icon: material/tools
+---
+
 In this section we'll cover the two ways to set up the Simultaneous RFID Reader - M7E . 
 
 ### Communicating via USB-C Serial

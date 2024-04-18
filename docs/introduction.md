@@ -1,4 +1,28 @@
-The M7E Nano is a Ultra-High Frequency (UHF) RFID reader capable of reading multiple tags simultaneously at up to 150 tags per second and can also write data to tags. The M7E Nano can read tags from several feet away (up to 16 feet in our testing!) with the proper antenna, conditions and device settings. This board includes 
+---
+icon: material/book-open-page-variant
+---
+
+<div class="grid cards desc" markdown>
+
+-   <a href="https://www.sparkfun.com/products/22925">
+    **SparkFun Simultaneous RFID Reader - M7E Hecto**<br>
+    **SKU:** DEV-22925
+
+    ---
+
+    <figure markdown>
+    ![SparkFun Simultaneous RFID Reader - M7E Hecto](https://cdn.sparkfun.com/r/600-600/assets/parts/2/5/0/6/2/WRL-24738-Simultaneous-RFID-Reader-Feature.jpg)
+    </figure></a>
+
+-   The M7E Hecto is a Ultra-High Frequency (UHF) RFID reader from JADAK<sup>&copy;</sup> capable of reading multiple tags simultaneously at up to 150 tags per second and can also write data to tags. The M7E Nano can read tags from several feet away (up to 16 feet in our testing!) with the proper antenna, conditions and device settings. This board includes a USB-C connector and CH340C USB to UART converter to quickly connect the board to a computer and read tags with no soldering required.
+
+    Along with the USB-C connector, the Simultaneous RFID Reader 3.3V has a 0.1"-spaced PTH header for connecting it to an external converter or to a 3.3V microcontroller of your choice to use it with the SparkFun Simultaneous RFID Tag Reader Library. A 2-way switch on the board allows for easy switching between the included communication interfaces.
+
+    <center>
+    [Purchase from SparkFun :fontawesome-solid-cart-plus:](https://www.sparkfun.com/products/22925){ .md-button .md-button--primary }
+    </center>
+
+</div>
 
 In this guide we'll cover everything you need to set up this RFID reader and use it with the Universal Reader Assistant application to read and write to UHF tags. We'll also cover how to set this board up in a circuit with a 3.3V microcontroller and point you to where you can get started using the SparkFun Simultaneous RFID Tag Reader Arduino Library.
 

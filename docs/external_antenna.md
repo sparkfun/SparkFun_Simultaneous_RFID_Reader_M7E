@@ -1,3 +1,7 @@
+---
+icon: material/antenna
+---
+
 The integrated PCB antenna works well over short distances but users who want to get the maximum range for the M7E Hecto should consider using an external antenna. Connecting an external antenna to the Simultaneous RFID Reader - M7E requires some hardware adjustments, minor assembly steps and other considerations regarding the antenna. Let's go over these adjustments and considerations. 
 
 ## FCC Regulations
@@ -71,7 +75,7 @@ To get the best range we recommend attaching an external high-gain antenna to a 
 We used the included hardware with the antenna to attach it to the leg of the tripod. 
 
 <figure markdown>
-[! [Photo showing antenna mounted to tripod.](./assets/img/Simultaneous_RFID_Reader_M7E-Mount.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-Mount.jpg "Click to enlarge")
+[![Photo showing antenna mounted to tripod.](./assets/img/Simultaneous_RFID_Reader_M7E-Mount.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-Mount.jpg "Click to enlarge")
 </figure>
 
 Now connect the RP-SMA to RP-TNC cable. And finally, connect the RP-TNC to the external antenna. You can use a different UHF RFID antenna but you will need to have the correct connectors and cables to go from the u.FL connector on the board to the connector on your specific antenna.

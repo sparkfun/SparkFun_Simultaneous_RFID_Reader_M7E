@@ -1,3 +1,7 @@
+---
+icon: material/thermometer
+---
+
 The module can reach temperatures greater than 85&deg;C (185&deg;F) when operating at full read power over extended periods so thermal management is an important consideration using this board. 
 
 The module will automatically throttle itself to prevent permanent damage from heat. This board provides enough ground plane heatsinking to allow the module to operate at full read power for tens of minutes before throttling occurs. If you plan to operate the module at full power for extended periods (over an hour) we recommend attaching a heatsink. 

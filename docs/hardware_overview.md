@@ -1,3 +1,7 @@
+---
+icon: material/cog
+---
+
 In this section we'll take a closer look at the hardware present on the Simultaneous RFID Reader 3.3V.
 
 ### M7E Nano
@@ -110,3 +114,7 @@ The trace antenna is enabled by default. Adjust the <b>RF</b> resistor to switch
 ### Board Dimensions
 
 The board measures 2.40" x 1.40" (60.96mm x 35.56mm) and has four mounting holes that fit a [4-40](https://www.sparkfun.com/products/10453) screw.
+
+<figure markdown>
+[![Board dimensions](./assets/board_files/SparkFun_Simultaneous_RFID_Reader_M7E-Dimensions.png){ width="600"}](./assets/board_files/SparkFun_Simultaneous_RFID_Reader_M7E-Dimensions.png "Click to enlarge")
+</figure>
