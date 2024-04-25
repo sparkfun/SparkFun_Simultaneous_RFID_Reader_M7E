@@ -90,6 +90,9 @@ The quickest way to get the RFID Reader up and running is through the USB-C conn
 
 Users who prefer to use the PTH headers to connect to a serial converter or microcontroller will want to solder either wire or a set of header pins to the board to make connections to the external device. If you don't have wire, header pins or soldering tools you may want to add the products below to your cart:
 
+!!! warning "Logic Levels"
+    <b>Note:</b> The serial output on the Simultaneous RFID Reader - M7E  operates at <b>3.3V logic</b> so make sure the microcontroller or serial converter connected to this interface operates at <b>3.3V</b> or are properly level-shifted.
+
 <div class="grid cards" markdown>
 
 -   <a href="https://www.sparkfun.com/products/15096">
@@ -189,9 +192,6 @@ Users who prefer to use the PTH headers to connect to a serial converter or micr
     </a>
 
 </div>
-
-!!! note "Logic Levels"
-    <b>Note:</b> The serial output on the Simultaneous RFID Reader - M7E  operates at <b>3.3V</b> logic so make sure the microcontroller or serial converter connected to this interface operates at <b>3.3V</b> or are properly level-shifted.
 
 #### Additional Materials
 

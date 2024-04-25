@@ -22,7 +22,7 @@ The list below from section 5.7 of the [M7E Hecto User Guide](./assets/component
 
 <figure markdown>
 [![Table of antennas](./assets/img/Authorized_Antennas.jpg){ width="600"}](./assets/img/Authorized_Antennas.jpg "Click to enlarge")
-<figcaption>*List of approved antenas*</figcaption>
+<figcaption><i>List of approved antenas</i></figcaption>
 </figure>
 
 ## Attaching the External Antenna
@@ -57,7 +57,7 @@ Carefully reflow the 0k&ohm; resistor labeled **RF** to move it to the u.FL posi
 
 <figure markdown>
 [![Photo showing 0k ohm resistor adjusted to external antenna position.](./assets/img/Simultaneous_RFID_Reader_M7E-Antenna_Selection.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-Antenna_Selection.jpg "Click to enlarge")
-<figcaption>*Take careful note of the position of this resistor in the photo to make sure it is in the correct position.*</figcaption>
+<figcaption><i>Take careful note of the position of this resistor in the photo to make sure it is in the correct position.</i></figcaption>
 </figure>
 
 Next, attach the u.FL to the [RP-SMA connector cable](https://www.sparkfun.com/products/662). Because this connector is fragile we recommend either taping or hot gluing the sheath of the cable to the PCB. This will help prevent damage to the u.FL connector in case the cable gets pulled on.
@@ -84,9 +84,7 @@ Now connect the RP-SMA to RP-TNC cable. And finally, connect the RP-TNC to the e
 [![Photo showing completed external antenna assembly](./assets/img/Simultaneous_RFID_Reader_M7E-Full_External_Antenna.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-Full_External_Antenna.jpg "Click to enlarge")
 </figure>
 
--> *u.FL connector to RP-SMA to RP-TNC* <-
-
 
 !!! warning
 
-    <b>Don't Forget!</b> Ensure that personnel do not stand in the radiation beam of the antenna unless they are more than 21cm away from the face of the antenna (to adhere to FCC limits for long-term exposure). Refer to the <a href="https://cdn.sparkfun.com/assets/learn_tutorials/6/1/3/Nano_Design_Guide_rev01E.pdf">M7E Nano design guide</a> for more information.
+    <b>Don't Forget!</b> Ensure that personnel <b>do not</b> stand in the radiation beam of the antenna unless they are more than 21cm away from the face of the antenna (to adhere to FCC limits for long-term exposure). Refer to the [M7E Hecto design guide](./assets/component_documentation/M7E_HECTO_User_Guide.pdf) for more information.
