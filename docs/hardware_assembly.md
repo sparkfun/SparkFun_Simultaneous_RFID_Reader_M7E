@@ -2,9 +2,9 @@
 icon: material/tools
 ---
 
-In this section we'll cover the two ways to set up the Simultaneous RFID Reader - M7E . 
+In this section we'll cover the two ways to set up the Simultaneous RFID Reader - M7E over both USB-C and connected to a microcontroller for use with the SparkFun Simultaneous RFID Reader Arduino Library. 
 
-### Communicating via USB-C Serial
+## Communicating via USB-C Serial
 
 The fastest and easiest way to start using the board is through the USB-C connector. Simply plug the board into a computer with a USB-C cable and open up the Universal Reader Assistant.
 
@@ -14,52 +14,47 @@ The fastest and easiest way to start using the board is through the USB-C connec
 
 Reminder, many computer USB ports can only supply <b>~500mA @5V</b> which limits the power level settings to roughly 20dBm and lower. Running the M7E at higher power levels may require a dedicated power supply.
 
-### Communicating via Serial PTH Header
+## Communicating via Serial PTH Header
 
-Users who prefer to communicate with the RFID reader using the Serial PTH header should solder either wires or header pins to connect them to a <b>3.3V</b> microcontroller (you can also use this to connect to a USB UART board like the [Serial Basic](https://www.sparkfun.com/products/15096)). If you are not familiar with through-hole soldering or would like a refresher, take a read through [this tutorial](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering).
+Users who prefer to communicate with the RFID reader using the Serial PTH header should solder either wires or header pins to connect them to a <b>3.3V</b> microcontroller (you can also use this to connect to a USB UART board like the [Serial Basic](https://www.sparkfun.com/products/15096). If you are not familiar with through-hole soldering or would like a refresher, take a read through [this tutorial](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering).
 
 <figure markdown>
 [![Photo showing Arduino circuit assembly](./assets/img/Simultaneous_RFID_Reader_M7E-Arduino_Circuit.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-Arduino_Circuit.jpg "Click to enlarge")
 </figure>
 
-We'll demonstrate soldering male headers to the board and use jumper wires to connect the RFID Reader to the [SparkFun RedBoard Artemis](https://www.sparkfun.com/products/19177) for use with the [SparkFun Simultaneous RFID Tag Reader Arduino Library](https://github.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library).
+We'll demonstrate soldering male headers to the board and use jumper wires to connect the RFID Reader to the [SparkFun RedBoard IoT](https://www.sparkfun.com/products/19177) for use with the [SparkFun Simultaneous RFID Tag Reader Arduino Library](https://github.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library).
 
 
-<table class="table table-striped table-hover table-bordered">
+<table>
     <tr>
-        <th class="text-center" colspan="2">Connection Table</th>
+        <th>RFID Reader</th>
+        <th>RedBoard IoT</th>
     </tr>
     <tr>
-        <th class="text-center">RFID Reader</th>
-        <th class="text-center">RedBoard Artemis</th>
-    </tr>
-    <tr align="center">
         <td>RX</td>
-        <td>TX / D2 <sup><a href="#M7ENano_Note1">[1]</a></sup></td>
+        <td>TX / D2</sup></td>
     </tr>
-    <tr align="center">
+    <tr>
         <td>TX</td>
-        <td>RX / D3 <sup><a href="#M7ENano_Note1">[1]</a></sup></td>
+        <td>RX / D3</sup></td>
     </tr>
-    <tr align="center">
-        <td>VIN <sup><a href="M7ENano_Note2">[2]</a></sup></td>
+    <tr>
+        <td>VIN</sup></td>
         <td>5V</td>
     </tr>
-    <tr align="center">
+    <tr>
         <td>Ground</td>
         <td>Ground</td>
     </tr>
 </table>
 
-<div class="alert alert-info">
-    <a name="M7ENano_Note1"></a><a href="https://learn.sparkfun.com/tutorials/simultaneous-rfid-reader---M7E-nano-33v-hookup-guide#M7ENano_Note1"><b>1:</b></a> Digital pin values are the default selections for Software Serial in the <a href="https://github.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library">Simulataneous RFID Reader Arduino Library</a> and may be incompatible with your selected microcontroller. Refer to the <a href="https://docs.arduino.cc/learn/built-in-libraries/software-serial#limitations-of-this-library">Arduino Software Serial Reference</a> for pin limitations for common microcontrollers.
-</div>
+!!! note "Digital Pin Selections"
 
-<div class="alert alert-danger">
-    <a name="M7ENano_Note2"></a><a href="https://learn.sparkfun.com/tutorials/simultaneous-rfid-reader---M7E-nano-33v-hookup-guide#M7ENano_Note2"><b>2:</b></a> We strongly recommend opening the <b>VIN</b> jumper on the Simultaneous RFID Reader - M7E Nano when connecting the <b>VIN</b> PTH pin to an external power source. When the <b>VIN</b> jumper is closed <b>VIN</b> is netted with <b>V_USB</b> (as well as <b>VCC</b>).
-</div>
+    Digital pin values are the default selections for Software Serial in the [Simulataneous RFID Reader Arduino Library](https://github.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library) and may be incompatible with your selected microcontroller. Refer to the [Arduino Software Serial Reference](https://docs.arduino.cc/learn/built-in-libraries/software-serial#limitations-of-this-library) for pin limitations for common microcontrollers.
 
-#### Power Supply Considerations
+
+
+### Power Supply Considerations
 
 When connecting the Simultaneous RFID Reader - M7E to a microcontroller, make sure your power supply can source sufficient current for your selected power level as the board can draw up to <b>720mA @5V</b> at max read power level. The M7E's internal voltage regulator includes built-in protection that engages when the current draw reaches <b>1A</b> and will not allow any more supply current to the module. As such, it is strongly recommended to use a <b>5V</b> power supply when setting the read power to above +26 dBm.
 

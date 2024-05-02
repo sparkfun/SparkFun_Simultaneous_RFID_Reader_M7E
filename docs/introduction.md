@@ -14,7 +14,7 @@ icon: material/book-open-page-variant
     ![SparkFun Simultaneous RFID Reader - M7E Hecto](https://cdn.sparkfun.com/r/600-600/assets/parts/2/5/0/6/2/WRL-24738-Simultaneous-RFID-Reader-Feature.jpg)
     </figure></a>
 
--   The M7E Hecto is a Ultra-High Frequency (UHF) RFID reader from JADAK<sup>&copy;</sup> capable of reading multiple tags simultaneously at up to 150 tags per second and can also write data to tags. The M7E Nano can read tags from several feet away (up to 16 feet in our testing!) with the proper antenna, conditions and device settings. This board includes a USB-C connector and CH340C USB to UART converter to quickly connect the board to a computer and read tags with no soldering required.
+-   The M7E Hecto is a Ultra-High Frequency (UHF) RFID reader from JADAK<sup>&copy;</sup> capable of reading multiple tags simultaneously at up to 150 tags per second and can also write data to tags. The M7E Hecto can read tags from several feet away (up to 16 feet in our testing!) with the proper antenna, conditions and device settings. This board includes a USB-C connector and CH340C USB to UART converter to quickly connect the board to a computer and read tags with no soldering required.
 
     Along with the USB-C connector, the Simultaneous RFID Reader 3.3V has a 0.1"-spaced PTH header for connecting it to an external converter or to a 3.3V microcontroller of your choice to use it with the SparkFun Simultaneous RFID Tag Reader Library. A 2-way switch on the board allows for easy switching between the included communication interfaces.
 
@@ -195,7 +195,7 @@ Users who prefer to use the PTH headers to connect to a serial converter or micr
 
 #### Additional Materials
 
-You'll also need UHF RFID tags for the M7E Nano to read/write. For best range performance you'll need an external antenna along with the appropriate adapter cables. We'll demonstrate how to connect the external antenna using the cables listed below:
+You'll also need UHF RFID tags for the M7E Hecto to read/write. For best range performance you'll need an external antenna along with the appropriate adapter cables. We'll demonstrate how to connect the external antenna using the cables listed below:
 
 <div class="grid cards" markdown>
 

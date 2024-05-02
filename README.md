@@ -5,7 +5,7 @@ SparkFun Simultaneous RFID Reader - M7E Hecto
 
 [*SparkFun Simultaneous RFID Reader - M7E Hecto*](https://www.sparkfun.com/products/24738)
 
-The SparkFun Simultaneous RFID Reader - M7E Hecto features M7E-HECTO Nano UHF RFID reader from JADAK<sup>&copy;</sup>. We loved the capabilities of the previous version of this RFID reader, the M6E, so we created this design featuring the M7E with an on-board USB-C connector and CH340C USB to UART converter to quickly connect the board to a computer and read tags with no soldering required.
+The SparkFun Simultaneous RFID Reader - M7E Hecto features M7E-HECTO UHF RFID reader from JADAK<sup>&copy;</sup>. We loved the capabilities of the previous version of this RFID reader, the M6E, so we created this design featuring the M7E with an on-board USB-C connector and CH340C USB to UART converter to quickly connect the board to a computer and read tags with no soldering required.
 
 Along with the USB-C connector, the Simultaneous RFID Reader 3.3V has a 0.1"-spaced PTH header for connecting it to an external converter or to a 3.3V microcontroller of your choice to use it with the SparkFun Simultaneous RFID Tag Reader Library. A 2-way switch on the board allows for easy switching between the included communication interfaces.
 

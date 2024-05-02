@@ -1,4 +1,4 @@
-The Universal Reader Assistant is a great way to start taking advantage of the full capabilities of the M7E-NANO. Unfortunately, it's only available for Windows.
+The Universal Reader Assistant is a great way to start taking advantage of the full capabilities of the M7E-Hecto. Unfortunately, it's only available for Windows.
 
 ## Download & Install
 
@@ -30,7 +30,7 @@ Click either "Connect & Read" or "Connect" to open up the Universal Reader Assis
 
 The main window of the Universal Reader Assistant contains a whole bunch of settings and status menus to adjust everything from the M7E's read/write options, power level and even perform firmware updates. It also has a handy readout for the M7E's internal temperature along with multiple tabs for interacting with tags the M7E sees including simple tag data, writing to the user memory and also locking a tag with a custom password.
 
-There are a ton of features to the Nano from ThingMagic. Poke around the Universal Reader Assistant to learn more. *Write EPC* and *User Memory* are two of the most commonly used tabs.
+There are a ton of features to the M7E from ThingMagic. Poke around the Universal Reader Assistant to learn more. *Write EPC* and *User Memory* are two of the most commonly used tabs.
 
 !!! info
     <b>Note:</b> The ‘Transport Logging’ checkbox is very handy. Select this box and all the serial communication will be recorded to a log file. These HEX bytes can be deciphered and recreated using an Arduino or other microcontroller if you need a particular capability or feature that is not supported in the SparkFun Simultaneous RFID Reader Arduino library.

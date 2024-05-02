@@ -15,7 +15,7 @@ You can get the 1:1 dimensional drawing of the board [here](https://cdn.sparkfun
 
 Heatsinking won’t be required in most prototyping applications. However, if you have heat-sensitive items near the module (such as temperature or humidity sensors) they may be influenced by the module. If you are planning to install the module for long-term operation we recommend attaching a heatsink with [thermal compound](https://www.sparkfun.com/products/9599) for best results.
 
-The module also supports changing the read duty cycle to reduce heat dissipation as well. Refer to the [M7E-NANO Design Guide](https://cdn.sparkfun.com/assets/learn_tutorials/6/1/3/Nano_Design_Guide_rev01E.pdf) for more information.
+The module also supports changing the read duty cycle to reduce heat dissipation as well. Refer to the [M7E-Hecto Design Guide](./assets/component_documentation/M7E_HECTO_User_Guide.pdf) for more information.
 
 
 
