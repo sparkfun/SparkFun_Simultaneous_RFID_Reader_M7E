@@ -50,6 +50,12 @@ Since this library supports both the M6E Nano and M7E Hecto, you'll need to defi
 
 The first example sets the M7E to constantly scan and report any tags it sees in the vicinity. Open the example by navigating to **File > Examples > SparkFun Simultaneous RFID Reader Library > Example 1 Constant Read**. Select your Board and Port and click the "Upload" button. Once the code finishes uploading, open the [serial monitor](https://learn.sparkfun.com/tutorials/terminal-basics/arduino-serial-monitor-windows-mac-linux) with the baud set to **115200**. 
 
+??? "Example 1 - Constant Read"
+
+    ```
+	--8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library/master/examples/Example1_Constant_Read/Example1_Constant_Read.ino"
+	```
+
 The code attempts to set up the module with the defined baud rate and if that fails, it prints "Module failed to respond. Please check wiring" If you see this prompt, double-check your connections to your development board and retry. On successful module startup and setup, the code prints "Press a key to begin scanning for tags." Send any key message and the M7E will begin to scan for any tags in range and print out their EPC as the screenshot below shows:
 
 <figure markdown>
@@ -60,6 +66,12 @@ The code attempts to set up the module with the defined baud rate and if that fa
 
 The second example demonstrates how to perform a single-shot read of one tag in the reader's range and print out the EPC value over serial. This example uses the `.readTagEPC()` function to pass it an array of bytes (in almost all cases EPCs are 12 bytes), the size of the array (12), and the amount of time to scan before giving up (500ms is default). This returns **RESPONSE_SUCCESS** when the M7E detects a tag and stores the EPC in the array given.
 
+??? "Example 2 - Read EPC"
+
+    ```
+    --8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library/master/examples/Example2_Read_EPC/Example2_Read_EPC.ino"
+    ```
+
 <figure markdown>
 [![Screenshot of successful tag read with EPC printout.](./assets/img/Example2-Read_Single.jpg){ width="600"}](./assets/img/Example2-Read_Single.jpg "Click to enlarge")
 </figure>
@@ -69,6 +81,12 @@ Note, this example also includes definitions and code to set up and use the buzz
 ## Example 3 - Write EPC
 
 Example 3 shows how to write a character string and store it as a custom EPC value. This is a great way to keep track of which tag is which by setting the EPC to something like `WRENCH` or `PILL#317`. Note, EPCs can only be written in an even number of bytes like the example sets it to:
+
+??? "Example 3 - Write EPC"
+
+    ```
+    --8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library/master/examples/Example3_Write_EPC/Example3_Write_EPC.ino"
+    ```
 
 ``` c++
 char stringEPC[] = "Hello!"; //You can only write even number of bytes
@@ -85,7 +103,19 @@ nano.setWritePower(500); //5.00 dBm. Higher values may cause USB port to brown o
 
 Example 4 shows how to detect and read a tag's available user memory. Not all UHF RFID tags have user memory and may not be configurable.
 
+??? "Example 4 - Read User Data"
+
+    ```
+    --8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library/master/examples/Example4_Read_User_Data/Example4_Read_User_Data.ino"
+    ```
+
 Example 5 demonstrates how to edit a tag's user data through the `.writeUserData()` function. This function lets you pass an array of characters to the function and records it to the first tag detected by the reader. 
+
+??? "Example 5 - Write User Data"
+
+    ```
+    --8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library/master/examples/Example5_Write_User_Data/Example5_Write_User_Data.ino"
+    ```
 
 ``` c++
 char testData[] = "ACBD"; //Must be even number of bytes. "Hello" is recorded as "Hell".
@@ -104,11 +134,25 @@ The next three examples all deal with passwords to lock a tag with an Access Pas
 
 **Example 6 - Read Passwords** displays the Access and Kill passwords for a tag detected by the reader. The Access password allows a user to lock a tag, preventing modification of various parts of the memory (EPC, User, etc). The Kill password is needed to disable a tag. Both passwords are `0x00000000` by default. 
 
+??? "Example 6 - Read Passwords"
+
+    ```
+    --8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library/master/examples/Example6_Read_Passwords/Example6_Read_Passwords.ino"
+    ```
+
 <figure markdown>
 [![Screenshot showing serial printout of access and kill passwords](./assets/img/Example6-Read_PWs.jpg){ width="600"}](./assets/img/Example6-Read_PWs.jpg "Click to enlarge")
 </figure>
 
-**Example 7 - Write Passwords** shows you how to write new passwords for both Access and Kill. These values can be adjusted from the passwords set in the example by changing the following lines for myKillPW and myAccessPW:
+**Example 7 - Write Passwords** shows you how to write new passwords for both Access and Kill. 
+
+??? "Example 7 - Write Passwords"
+
+    ```
+    --8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library/master/examples/Example7_Write_Passwords/Example7_Write_Passwords.ino"
+    ```
+
+These values can be adjusted from the passwords set in the example by changing the following lines for myKillPW and myAccessPW:
 
 ``` c++
 byte myKillPW[] = {0xEE, 0xFF, 0x11, 0x22};
@@ -127,6 +171,12 @@ After running Example 7, re-run Example 6 to see the updated passwords and ensur
 ??? warning - "Danger!"
 
     <b>Note:</b> Killing a tag blows an internal fuse to the IC and makes the tag irreversibly dead.
+
+??? "Example 8 - Kill Tag"
+
+    ```
+    --8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library/master/examples/Example8_Kill_Tag/Example8_Kill_Tag.ino"
+    ```
 
 It is very good to see that the protocol has the kill feature. Killing a tag makes sense after an item has been purchased (gallon of milk) or a process has been completed (dry cleaning has been picked up). By limiting the life-span of a tag you can help protect end user privacy and tracking.
 
