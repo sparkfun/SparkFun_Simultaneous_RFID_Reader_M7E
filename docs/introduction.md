@@ -14,6 +14,12 @@ icon: material/book-open-page-variant
     ![SparkFun Simultaneous RFID Reader - M7E Hecto](https://cdn.sparkfun.com/r/600-600/assets/parts/2/5/0/6/2/WRL-24738-Simultaneous-RFID-Reader-Feature.jpg)
     </figure></a>
 
+    <center>
+    <article class="video_desc">
+    <iframe src="https://www.youtube.com/embed/ITT54OnKUzM" title="Product Showcase: SparkFun Simultaneous RFID Reader - M7E" frameborder="0" allow="accelerometer; autoplay; clipboard-write;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </article>
+    </center>
+
 -   The M7E Hecto is a Ultra-High Frequency (UHF) RFID reader from JADAK<sup>&copy;</sup> capable of reading multiple tags simultaneously at up to 150 tags per second and can also write data to tags. The M7E Hecto can read tags from several feet away (up to 16 feet in our testing!) with the proper antenna, conditions and device settings. This board includes a USB-C connector and CH340C USB to UART converter to quickly connect the board to a computer and read tags with no soldering required.
 
     Along with the USB-C connector, the Simultaneous RFID Reader 3.3V has a 0.1"-spaced PTH header for connecting it to an external converter or to a 3.3V microcontroller of your choice to use it with the SparkFun Simultaneous RFID Tag Reader Library. A 2-way switch on the board allows for easy switching between the included communication interfaces.

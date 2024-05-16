@@ -16,7 +16,7 @@ Reminder, the Simultaneous RFID Reader M7E 3.3V operates at <b>3.3V</b> logic. M
 
 The functional range of the Simultaneous RFID Reader - M7E depends on a wide variety of factors and any one of these can increase or decrease the range at which tags are read. Make sure the antenna (either PCB or external) is free of anything that may cause interference. For example, the PCB antenna's range can drastically change depending on whether it is in open space or next to a solid object (such as a desk or person). Similarly, a tag's position in relation to the antenna as well as any solid objects (again, think person or other object) it may be near or placed on can significantly change the range.
 
-For ideal range, make sure both the antenna and tag are in as much open space as possible and positioned in line with the antenna's radiation pattern.
+For ideal range, make sure both the antenna and tag are in as much open space as possible and positioned in line with the antenna's radiation pattern. 
 
 ## General Troubleshooting and Technical Assistance
 

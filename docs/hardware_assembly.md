@@ -22,13 +22,13 @@ Users who prefer to communicate with the RFID reader using the Serial PTH header
 [![Photo showing Arduino circuit assembly](./assets/img/Simultaneous_RFID_Reader_M7E-Arduino_Circuit.jpg){ width="600"}](./assets/img/Simultaneous_RFID_Reader_M7E-Arduino_Circuit.jpg "Click to enlarge")
 </figure>
 
-We'll demonstrate soldering male headers to the board and use jumper wires to connect the RFID Reader to the [SparkFun RedBoard IoT](https://www.sparkfun.com/products/19177) for use with the [SparkFun Simultaneous RFID Tag Reader Arduino Library](https://github.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library).
+We'll demonstrate soldering male headers to the board and use jumper wires to connect the RFID Reader to the [SparkFun RedBoard Artemis](https://www.sparkfun.com/products/15444) for use with the [SparkFun Simultaneous RFID Tag Reader Arduino Library](https://github.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library).
 
 
 <table>
     <tr>
         <th>RFID Reader</th>
-        <th>RedBoard IoT</th>
+        <th>RedBoard Artemis</th>
     </tr>
     <tr>
         <td>RX</td>
