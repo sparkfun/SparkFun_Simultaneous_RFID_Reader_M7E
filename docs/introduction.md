@@ -4,9 +4,9 @@ icon: material/book-open-page-variant
 
 <div class="grid cards desc" markdown>
 
--   <a href="https://www.sparkfun.com/products/22925">
+-   <a href="https://www.sparkfun.com/products/24738">
     **SparkFun Simultaneous RFID Reader - M7E Hecto**<br>
-    **SKU:** DEV-22925
+    **SKU:** WRL-24738
 
     ---
 
@@ -25,7 +25,7 @@ icon: material/book-open-page-variant
     Along with the USB-C connector, the Simultaneous RFID Reader 3.3V has a 0.1"-spaced PTH header for connecting it to an external converter or to a 3.3V microcontroller of your choice to use it with the SparkFun Simultaneous RFID Tag Reader Library. A 2-way switch on the board allows for easy switching between the included communication interfaces.
 
     <center>
-    [Purchase from SparkFun :fontawesome-solid-cart-plus:](https://www.sparkfun.com/products/22925){ .md-button .md-button--primary }
+    [Purchase from SparkFun :fontawesome-solid-cart-plus:](https://www.sparkfun.com/products/24738){ .md-button .md-button--primary }
     </center>
 
 </div>
