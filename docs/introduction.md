@@ -229,16 +229,16 @@ You'll also need UHF RFID tags for the M7E Hecto to read/write. For best range p
     WRL-18569
     </a>
 
--   <a href="https://www.sparkfun.com/products/20228">
+-   <a href="https://www.sparkfun.com/products/20226">
 
     <figure markdown>
-    ![UHF RFID Tags - Adhesive (5 Pack)](https://cdn.sparkfun.com//assets/parts/2/0/0/3/2/TagStrip_01.jpg)
+    ![UHF RFID Tags - 30mm x 16mm (Adhesive)](https://cdn.sparkfun.com/assets/parts/2/0/0/3/0/20226-Feature.jpg)
     </figure>
     </a>
     ---
-    <a href="https://www.sparkfun.com/products/20228">
-    **UHF RFID Tags - Adhesive (5 Pack)**<br>
-    WRL-20228
+    <a href="https://www.sparkfun.com/products/20226">
+    **UHF RFID Tags - 30mm x 16mm (Adhesive)**<br>
+    WRL-20226
     </a>
 
 -   <a href="https://www.sparkfun.com/products/14132">
